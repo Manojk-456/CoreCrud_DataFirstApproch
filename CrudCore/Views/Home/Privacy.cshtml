@@ -1,0 +1,8 @@
+﻿@page
+
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<h1>**************************** Session **************************</h1>
+    <h1>@HttpContextAccessor.HttpContext.Session.GetString("name")</h1>
+    
